@@ -45,9 +45,9 @@ mount "${DISK}1" /mnt/boot
 pacstrap /mnt base linux linux-firmware intel-ucode \
     btrfs-progs grub sudo efibootmgr os-prober \
     hyprland waybar alacritty \
-    networkmanager \
+    networkmanager make debugedit \
     pipewire pipewire-alsa pipewire-pulse wireplumber \
-    neovim git curl zsh \
+    neovim git base-devel curl zsh \
     xdg-desktop-portal xdg-desktop-portal-hyprland \
     wl-clipboard grim slurp \
     systemd-zram-generator
