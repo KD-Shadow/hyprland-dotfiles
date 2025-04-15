@@ -8,7 +8,7 @@
         "reload_style_on_change": true,
         "modules-left": ["clock","custom/notify"],
         "modules-center": ["hyprland/workspaces"],
-        "modules-right": ["backlight","bluetooth","tray" ,"battery"],
+        "modules-right": ["backlight","bluetooth","network" ,"battery"],
 
 
         "hyprland/workspaces": {
