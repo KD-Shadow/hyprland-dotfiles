@@ -34,7 +34,7 @@ source "${ZINIT_HOME}/zinit.zsh"
 ############################################
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
-
+export EDITOR=neovim
 ############################################
 # Add in zsh plugins
 ############################################
