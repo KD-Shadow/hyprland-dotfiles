@@ -14,7 +14,7 @@ tooltip {
     background:@background;
     color:@color7;
 }
-#clock:hover,#custom-notify:hover,#backlight:hover,#tray:hover, #custom-pacman:hover, #custom-notification:hover,#bluetooth:hover,#network:hover,#battery:hover, #cpu:hover,#memory:hover,#temperature:hover{
+#clock:hover,#custom-notify:hover,#pulseaudio:hover,#backlight:hover,#tray:hover, #custom-pacman:hover, #custom-notification:hover,#bluetooth:hover,#network:hover,#battery:hover, #cpu:hover,#memory:hover,#temperature:hover{
     transition: all .3s ease;
     color:@color9;
 }
@@ -40,7 +40,8 @@ tooltip {
     color:@color7;
 
 }
-#backlight{
+#backlight,
+#pulseaudio{
   padding: 0px 5px;
     color:@color12;
     transition: all .3s ease;

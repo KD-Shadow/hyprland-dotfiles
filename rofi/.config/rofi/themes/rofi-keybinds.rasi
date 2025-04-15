@@ -20,7 +20,7 @@ configuration {
 
 // Main //
 window {
-    width:                        20em;
+    width:                        25em;
     x-offset:                     0em;
     y-offset:                     2em;
     spacing:                      0em;
