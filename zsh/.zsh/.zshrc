@@ -182,3 +182,4 @@ eval "$(zoxide init zsh)"
 source ~/.zsh/alias.zsh
 source ~/.zsh/functions.zsh
 source ~/.zsh/functions.sh
+export PATH="$HOME/.local/bin:$PATH"

@@ -1,0 +1,38 @@
+
+
+{
+"include": [
+  "$HOME/.config/waybar/new_modules",
+ 
+  ],
+"layer": "top",
+"position": "top",
+"height": 10,
+"margin-left": 10,
+"margin-right": 10,
+"margin-top": 2,
+	
+"modules-left": [
+	"hyprland/workspaces",
+	"custom/separator#blank_2",
+	"mpris",
+],
+
+"modules-center": [
+	"custom/separator#blank",
+	"clock",
+	"custom/separator#blank",
+	"custom/swaync"
+],
+		
+"modules-right": [
+	"hyprland/window",
+	"custom/separator#blank_2",
+
+    "pulseaudio",
+    "backlight",
+    "battery",
+    "network",
+	"custom/separator#blank",
+	],
+}
