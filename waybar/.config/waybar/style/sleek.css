@@ -63,6 +63,9 @@
   padding: 0.5rem 1rem;
   margin: 5px 0;
 }
+ #custom-separator{
+    color:@color9;
+}
 
 #clock {
   color: @color9;

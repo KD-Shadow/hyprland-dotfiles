@@ -15,23 +15,25 @@
 "modules-left": [
 	"hyprland/workspaces",
 	"custom/separator#blank_2",
-	"mpris",
 ],
 
 "modules-center": [
 	"custom/separator#blank",
 	"clock",
-	"custom/separator#blank",
 	"custom/swaync"
 ],
 		
 "modules-right": [
 	"hyprland/window",
 	"custom/separator#blank_2",
+    "custom/separator#line",
 
     "pulseaudio",
+    "custom/separator#line",
     "backlight",
+    "custom/separator#line",
     "battery",
+    "custom/separator#line",
     "network",
 	"custom/separator#blank",
 	],

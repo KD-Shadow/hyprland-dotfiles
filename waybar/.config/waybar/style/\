@@ -1,7 +1,7 @@
 @import url("/home/sh4dow/.cache/wal/colors-waybar.css");
 * {
-	font-family: "JetBrainsMono Nerd Font Bold";
-	font-weight: 900;
+	font-family: "JetBrainsMono Nerd Font";
+	font-weight: bold;
 	min-height: 0;		
 	/* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
 	font-size: 97%;
@@ -30,7 +30,7 @@ tooltip {
 .modules-right {
 	border: 3px solid #20052a;
 	border-radius: 100px 0px 0px 0px;
-	background-color: @color4;
+	background-color: @color11;
 	padding-top: 2px;
 	padding-bottom: 2px;
 	padding-right: 5px;
@@ -45,9 +45,10 @@ tooltip {
 }
 
 .modules-left {
+	/*background-color: #1e1e2e;*/
 	border: 3px solid #20052a;
 	border-radius: 0px 0px 100px 0px;
-	background-color: @color4;
+	background-color: @color11;
 	padding-top: 2px;
 	padding-bottom: 2px;
 	padding-right: 5px;
@@ -68,7 +69,7 @@ tooltip {
 }
 
 #workspaces button.active {
-	color: @color9;
+	color: #cba6f7;
 	border-radius: 20%;
 	background-color: black;
     padding-left: 8px;
@@ -78,7 +79,7 @@ tooltip {
 }
 
 #workspaces button.focused {
-	color: @color12;
+	color: #d8dee9;
 }
 
 #workspaces button.urgent {
@@ -87,7 +88,7 @@ tooltip {
 }
 
 #workspaces button:hover {
-	color: @color7;
+	color: #9CCFD8;
     border-radius: 15px;
  	padding-left: 2px;
     padding-right: 2px;
@@ -141,7 +142,6 @@ tooltip {
 #custom-tty,
 #custom-updater,
 #custom-weather,
-#custom-separator,
 #custom-weather.clearNight,
 #custom-weather.cloudyFoggyDay,
 #custom-weather.cloudyFoggyNight,
@@ -152,7 +152,7 @@ tooltip {
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
 #custom-weather.sunnyDay {
-	color: @color9;
+	color: whitesmoke;
 	padding-top: 4px;
 	padding-bottom: 4px;
 	padding-right: 6px;
