@@ -20,6 +20,7 @@
 "modules-center": [
 	"custom/separator#blank",
 	"clock",
+  "custom/separator#blank",
 	"custom/swaync"
 ],
 		
@@ -32,9 +33,9 @@
     "custom/separator#line",
     "backlight",
     "custom/separator#line",
-    "battery",
-    "custom/separator#line",
     "network",
+    "custom/separator#line",
+    "battery",
 	"custom/separator#blank",
 	],
 }

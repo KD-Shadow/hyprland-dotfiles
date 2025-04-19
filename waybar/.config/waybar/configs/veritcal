@@ -1,0 +1,125 @@
+{
+    "layer": "top",
+    "position": "left",
+    "width": 40,
+    "spacing": 4,
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["hyprland/window", "pulseaudio", "backlight", "battery", "network"],
+
+    "hyprland/workspaces": {
+        "format": "{id}",
+        "format-icons": {
+            "1": "Ⅰ",
+            "2": "Ⅱ",
+            "3": "Ⅲ",
+            "4": "Ⅳ",
+            "5": "Ⅴ",
+            "6": "Ⅵ",
+            "7": "Ⅶ",
+            "8": "Ⅷ",
+            "9": "Ⅸ",
+            "10": "Ⅹ"
+        },
+        "format": "{icon}",
+        "on-click": "activate",
+        "sort-by-number": true,
+        "all-outputs": true
+    },
+
+    "clock": {
+        "format": "{:%I\n%M\n%p}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "on-click": "gnome-calendar",
+        "calendar": {
+            "mode"          : "month",
+            "weeks-pos"     : "right",
+            "on-scroll"     : 1,
+            "format": {
+                "months":     "<span color='#ffead3'><b>{}</b></span>",
+                "days":       "<span color='#ecc6d9'>{}</span>",
+                "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                "today":      "<span color='#ff6699'><b>{}</b></span>"
+            }
+        }
+    },
+
+    "hyprland/window": {
+        "format": "{}",
+        "max-length": 15,
+        "separate-outputs": true,
+        "rotate": 90
+    },
+
+    "custom/separator": {
+        "format": "──",
+        "interval": "once",
+        "tooltip": false
+    },
+
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-muted": "🔇",
+        "format-icons": {
+            "default": [
+            	"",
+				"",
+				" "
+            ]
+        },
+        "scroll-step": 5,
+        "on-click": "pavucontrol",
+        "tooltip": true,
+        "tooltip-format": "{volume}%"
+    },
+
+    "backlight": {
+        "format": "{icon}",
+        	"format-icons": [
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"",
+			""
+		],
+        "on-click": "brightnessctl set 5%+",
+        "on-click-right": "brightnessctl set 5%-",
+        "tooltip": true,
+        "tooltip-format": "{percent}%"
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon}",
+        "format-charging": "⚡",
+        "format-plugged": "🔌",
+        "format-icons": [
+			"",
+			"",
+			"",
+			"",
+			""
+		],
+
+        "on-click": "xfce4-power-manager-settings",
+        "tooltip": true,
+        "tooltip-format": "{capacity}% - {time}"
+    },
+
+    "network": {
+        "format-wifi": " ",
+        "format-ethernet": "🌐",
+        "format-disconnected": "❌",
+        "on-click": "kitty -e nmtui",
+        "tooltip": true,
+        "tooltip-format": "{essid} ({signalStrength}%) - {ipaddr}"
+    }
+}

@@ -49,32 +49,33 @@
     text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .2);
 }
 
-#custom-music,
-#tray,
 #backlight,
-#clock,
-#battery,
-#pulseaudio,
-#custom-lock,
-#language,
-#network,
-#custom-power {
-  color: @color9;
+#pulseaudio
+ {
+  color: @color4;
+  padding: 0.5rem 1rem;
+  margin: 5px 0;
+}
+#network
+ {
+  color: @color5;
+  padding: 0.5rem 1rem;
+  margin: 5px 0;
+}
+#clock{
+  color: @color2;
   padding: 0.5rem 1rem;
   margin: 5px 0;
 }
  #custom-separator{
     color:@color9;
-}
 
-#clock {
-  color: @color9;
-  border-radius: 0px 1rem 1rem 0px;
-  margin-right: 1rem;
 }
 
 #battery {
-  color: @color9;
+  color: @color2;
+   padding: 0.5rem 1rem;
+  margin: 5px 0;
 }
 
 #battery.charging {
@@ -86,7 +87,7 @@
 }
 
 #backlight {
-  color: @color9;
+  color: @color3;
 }
 
 #backlight,
@@ -100,20 +101,16 @@
   margin-left: 1rem;
 }
 
-#mpris {
-  color: @color9;
-  border-radius: 1rem;
-}
 
 #window {
   border-radius: 1rem 0px 0px 1rem;
-  color: @color9;
+  color: @color2;
 }
 
 #custom-swaync {
   margin-right: 1rem;
   border-radius: 0px 1rem 1rem 0px;
-  color: @color9;
+  color: @color3;
 }
 
 #network {
@@ -125,7 +122,4 @@
   color: @red;
 }
 
-#window:hover,#mpris:hover,#clock:hover,#pulseaudio:hover,#custom-music:hover,#backlight:hover,#custom-power:hover,#custom-swaync:hover,#battery:hover,#network:hover,#language:hover,#custom-lock:hover{
-     transition: all .3s ease;
-    color:@color13;
-}
+

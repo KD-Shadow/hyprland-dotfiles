@@ -1,0 +1,98 @@
+@import "/home/sh4dow/.cache/wal/colors-waybar.css";
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 12px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: @background;
+    color: @foreground;
+}
+
+#workspaces {
+    background: @background;
+    margin: 5px 0;
+    padding: 5px 0;
+    border-radius: 10px;
+}
+
+#workspaces button {
+    padding: 5px 10px;
+    margin: 3px 0;
+    background: transparent;
+    color: @foreground;
+    border-radius: 8px;
+}
+
+#workspaces button.active {
+    background: @color6;
+    color: @background;
+}
+
+#clock {
+    background: @background;
+    color: @color3;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+#window {
+    background: @background;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    color: @color2;
+    font-weight: bold;
+}
+
+#custom-separator {
+    color: @color8;
+    font-size: 18px;
+    margin: 0 4px;
+}
+
+#pulseaudio {
+    background: @background;
+    color: @color4;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 0;
+}
+
+#backlight {
+    background: @background;
+    color: @color3;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 0;
+}
+
+#battery {
+    background: @background;
+    color: @color2;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 0;
+}
+
+#battery.warning {
+    color: @color3;
+}
+
+#battery.critical {
+    color: @color1;
+}
+
+#network {
+    background: @background;
+    color: @color5;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 0;
+}
