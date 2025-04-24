@@ -1,9 +1,9 @@
-@import url("/home/$USER/.config/waybar/colors.css");
+@import url("/home/sh4dow/.cache/wal/colors-waybar.css");
 
 * {
   font-family: "DM Sans", "JetBrainsMono Nerd Font Propo", sans-serif;
-  font-size: 16px;
-  border-radius: 50px;
+  font-size: 10px;
+  border-radius: 30px;
   font-weight: bold;
 }
 
@@ -17,64 +17,39 @@ window#waybar {
 }
 
 #workspaces {
-  background-color: @surface_container_low;
-  padding: 2px 2px 2px 2px;
+  background-color: @background;
+  padding: 0px 15px 0px 15px;
   border-radius: 50px;
   margin-left: 12px;
 }
 
 #workspaces button.active {
-  background-color: @primary_fixed_dim;
-  color: @on_primary_fixed;
-  padding: 5px 24px;
+  background-color: @background;
+  color: @color3;
+  padding: 0px 15px 0px 15px;
 }
 
 #workspaces button.active:hover {
-  color: @primary_fixed_dim;
+  color: @foreground;
   background: inherit;
 }
 
 #workspaces button.empty {
-  color: @outline_variant;
+  color: @color10;
 }
 
 #workspaces button {
   background-color: transparent;
-  color: @outline;
+  color: @foreground;
   transition: margin 150ms ease-in-out, padding 150ms ease-in-out;
   transition: background-color 0.3s ease, color 0.3s ease, padding 0.2s ease;
 }
 
 #workspaces button:hover {
-  background: @surface_container_high;
+  background: @foreground;
 }
 
-#workspaces button.urgent {
-  background-color: @error;
-  color: @on_error;
-}
 
-#battery,
-#pulseaudio,
-#backlight,
-#custom-pacman,
-#network,
-#clock,
-#custom-weather,
-#custom-media,
-#window,
-#cpu,
-#memory,
-#disk,
-#tray,
-#custom-launcher,
-#custom-notification,
-#power-profiles-daemon {
-  color: @primary;
-  background-color: @surface_container;
-  padding: 0 15px 0 15px;
-  margin: 0 0 0 12px;
-}
 
 
 #window.hidden {
@@ -89,4 +64,32 @@ window#waybar {
 window#waybar.empty #window {
     background-color: transparent;
 }
+#clock{ color: @color2;
+  background-color: @background;
+  padding: 0 15px 0 15px;
+  margin: 0 0 0 12px;
+}
+#network{
+  color: @color10;
+  background-color: @background;
+  padding: 0 15px 0 15px;
+  margin: 0 0 0 12px;
+}
+#pulseaudio{
+  color: @color4;
+  background-color: @background;
+  padding: 0 15px 0 15px;
+  margin: 0 0 0 12px;
+}
+#battery{ color: @color2;
+  background-color: @background;
+  padding: 0 15px 0 15px;
+  margin: 0 0 0 12px;
+}
 
+#custom-notification{
+  color: @color3;
+  background-color: @background;
+  padding: 0 15px 0 15px;
+  margin: 0 0 0 12px;
+}

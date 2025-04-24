@@ -18,92 +18,57 @@
     "break",
     {
       "type": "title",
-      "format": "                                {6}{7}{8}"
+      "keyWidth": 10,
+      "format": "         {6}{7}{8}"
     },
-    "break",
     {
       "type": "custom",
-      "format": "┌──────────────────────────────────────────────────────────────────────────────┐" // `\u001b` is `\033`, or `\e`
-    },
-    "break",
-    {
-      "key": "     OS           ",
-      "keyColor": "green",
-      "type": "os"
+      "format": " ─────────────────────────── "
     },
     {
-      "key": "    󰌢 Machine      ",
-      "keyColor": "cyan",
-      "type": "host"
+      "type": "kernel",
+      "key": " ",
+      "keyColor": "yellow"
     },
     {
-      "key": "     Kernel       ",
-      "keyColor": "blue",
-      "type": "kernel"
+      "type": "wm",
+      "key": " ",
+      "keyColor": "blue"
     },
     {
-      "key": "    󰅐 Uptime       ",
-      "keyColor": "green",
-      "type": "uptime"
+      "type": "shell",
+      "key": " ",
+      "keyColor": "yellow"
     },
     {
-      "key": "     Packages     ",
-      "keyColor": "cyan",
-      "type": "packages"
+      "type": "terminal",
+      "key": " ",
+      "keyColor": "blue"
     },
     {
-      "key": "     WM           ",
-      "keyColor": "blue",
-      "type": "wm"
+      "type": "packages",
+      "key": "󰏖 ",
+      "keyColor": "yellow"
     },
     {
-      "key": "     Shell        ",
-      "keyColor": "green",
-      "type": "shell"
+      "type": "memory",
+      "key": "󰍛 ",
+      "keyColor": "magenta",
+      "format": "{1} / {2}"
     },
     {
-      "key": "     Terminal     ",
-      "keyColor": "cyan",
-      "type": "terminal"
+      "type": "uptime",
+      "key": "󰔛 ",
+      "keyColor": "green"
     },
-    {
-      "key": "     Font         ",
-      "keyColor": "blue",
-      "type": "terminalfont"
-    },
-    {
-      "key": "    󰻠 CPU          ",
-      "keyColor": "green",
-      "type": "cpu"
-    },
-    {
-      "key": "    󰍛 GPU          ",
-      "keyColor": "cyan",
-      "type": "gpu"
-    },
-    {
-      "key": "    󰑭 Memory       ",
-      "keyColor": "blue",
-      "type": "memory"
-    },
-    {
-      "key": "     Wifi         ",
-      "keyColor": "green",
-      "type": "wifi"
-    },
-       "break",
     {
       "type": "custom",
-      "format": "└──────────────────────────────────────────────────────────────────────────────┘" // `\u001b` is `\033`, or `\e`
+      "format": " ─────────────────────────── "
     },
-    "break",
     {
-      "type": "colors",
-      "paddingLeft": 34,
-      "symbol": "circle",
-      "block": {
-        "width": 10
-      }
-    }
+      "type": "custom",
+      "format": "   \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m  \u001b[90m "
+    },
+    "break"
   ]
 }
