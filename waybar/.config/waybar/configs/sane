@@ -29,7 +29,7 @@
   },
 
  
-
+  
   "custom/media": {
     "format": "{}",
     "escape": true,
@@ -85,6 +85,16 @@
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
     "tooltip-format": "Connected to {essid}"
   },
+    "hyprland/workspaces#2": {
+        "format": "{id}",
+        "format-icons": {
+           
+        },
+        "format": "{icon}",
+        "on-click": "activate",
+        "sort-by-number": true,
+        "all-outputs": true
+    },
 
   "hyprland/workspaces": {
     "format": "{icon}",
@@ -104,7 +114,7 @@
     "persistent-workspaces": {
       "*": 5 // 5 workspaces by default on every monitor
     },
-    "sort-by-number": true
+    "sort-by-number": true,
   },
 
   "backlight": {
